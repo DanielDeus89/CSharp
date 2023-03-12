@@ -26,9 +26,7 @@ namespace RollDie
             DisplayDie(dieLabel1);
             DisplayDie(dieLabel2);
             DisplayDie(dieLabel3);
-            DisplayDie(dieLabel4);
-
-   
+            DisplayDie(dieLabel4);   
         }
 
         public void DisplayDie(Label dieLabel)
