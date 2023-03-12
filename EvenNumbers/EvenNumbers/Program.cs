@@ -25,10 +25,8 @@ namespace EvenNumbers
                 if(i % 2 == 0)
                 {
                     Console.WriteLine(i);
-
                 }
             }
-
             Console.ReadKey();
         }
     }
