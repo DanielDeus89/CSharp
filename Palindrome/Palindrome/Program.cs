@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+Desafio: Crie um programa que receba uma string e verifique se ela é um palíndromo 
+(ou seja, se ela pode ser lida da mesma forma da esquerda para a direita e da direita para a esquerda, desconsiderando espaços e pontuações).
+*/
+
+
+
+using System;
 
 namespace Palindromo
 {
