@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaAreaTriangulo", "CalculaAreaTriangulo\CalculaAreaTriangulo.csproj", "{50CE98F6-DCD0-4153-BB3C-313ACF3DF26B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50CE98F6-DCD0-4153-BB3C-313ACF3DF26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50CE98F6-DCD0-4153-BB3C-313ACF3DF26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50CE98F6-DCD0-4153-BB3C-313ACF3DF26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50CE98F6-DCD0-4153-BB3C-313ACF3DF26B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A9081B7-9726-4494-8B6E-E49F0F51EA46}
+	EndGlobalSection
+EndGlobal
