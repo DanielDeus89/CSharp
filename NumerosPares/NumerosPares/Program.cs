@@ -16,18 +16,26 @@ namespace NumerosPares
         {
             int number;
 
-            while (true)
+            Console.Write("Insira um Numero inteiro positivo: ");
+            number = Int32.Parse(Console.ReadLine());
+
+            while (number <= 0)
             {
+                Console.WriteLine("Erro: o número deve ser positivo");
+
                 Console.Write("Insira um Numero inteiro positivo: ");
                 number = Int32.Parse(Console.ReadLine());
 
-                for (int i = 2; i <= number; i++)
+
+                Console.WriteLine($"Números pares entre 0 e {number}:");
+                for (int i = 0; i <= number; i++)
                 {
                     if (i % 2 == 0)
-                    {
-                        Console.WriteLine(i);
-                    }
-                }break;
+                        {
+                            Console.WriteLine(i);
+                        }
+                   }
+
             }
             Console.ReadKey();
         }
