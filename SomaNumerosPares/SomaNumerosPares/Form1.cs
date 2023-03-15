@@ -52,6 +52,7 @@ namespace SomaNumerosPares
                 {
                     soma += numero;
                     lblResultado.Text = "Soma dos Pares: " + soma;
+
                 }
 
             }
