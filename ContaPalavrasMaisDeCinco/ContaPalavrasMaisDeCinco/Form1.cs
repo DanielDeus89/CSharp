@@ -56,5 +56,10 @@ namespace ContaPalavrasMaisDeCinco
 
             lblResultado.Text = "Quantidade de palavras com mais de 5 caracteres: " + count;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

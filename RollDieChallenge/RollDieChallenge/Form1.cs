@@ -53,11 +53,6 @@ namespace RollDieChallenge
             int face = 0;
             int soma = 0;
 
-            if (dados == 0)
-            {
-                lblOutput.Text = "valore in";
-            }
-
             for (int i = 1; i <= dados; i++)
             {
                
@@ -65,7 +60,7 @@ namespace RollDieChallenge
                 
                 soma += face;
 
-                lblOutput.Text += "Dado " + i + ":" + face + "\n";
+                lblOutput.Text += "Dado " + i + ": " + face + "\n";
             }
             lblOutput.Text += "\n\nSoma: " + soma.ToString();
         }
