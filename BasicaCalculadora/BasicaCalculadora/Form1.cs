@@ -19,33 +19,69 @@ namespace BasicaCalculadora
         }
 
         double resultado = 0;
+        string operacao;
         string primeiroValor;
         string segundoValor;
 
-        private void btn1_Click(object sender, EventArgs e)
+        private void btnNumero_Click(object sender, EventArgs e)
         {
-            txtValor.Text += btn1.Text;
+            Button btn = (Button)sender;
         }
 
-        private void btn2_Click(object sender, EventArgs e)
-        {
-            txtValor.Text += btn2.Text;
-
-        }
 
         private void btnSomar_Click(object sender, EventArgs e)
         {
             primeiroValor = txtValor.Text;
             txtValor.Text = "";
-            resultado += Convert.ToDouble(primeiroValor);
+            operacao = "+";
         }
-
+        private void btnSubtrair_Click(object sender, EventArgs e)
+        {
+            primeiroValor = txtValor.Text;
+            txtValor.Text = "";
+            operacao = "-"; 
+        }
+        private void btnMulti_Click(object sender, EventArgs e)
+        {
+            primeiroValor = txtValor.Text;
+            txtValor.Text = "";
+            operacao = "*";
+        }
+        private void btnDividir_Click(object sender, EventArgs e)
+        {
+            primeiroValor = txtValor.Text;
+            txtValor.Text = "";
+            operacao = "/";
+        }
         private void btnResultado_Click(object sender, EventArgs e)
         {
             segundoValor = txtValor.Text;
             txtValor.Text = "";
-            resultado += Convert.ToDouble(primeiroValor) + Convert.ToDouble(segundoValor);
+            switch (operacao)
+            {
+                case "+":
+                    resultado = Convert.ToDouble(primeiroValor) + Convert.ToDouble(segundoValor);
+                    break;
+                case "-":
+                    resultado = Convert.ToDouble(primeiroValor) - Convert.ToDouble(segundoValor);
+                    break;
+                case "*":
+                    resultado = Convert.ToDouble(primeiroValor) * Convert.ToDouble(segundoValor);
+                    break;
+                case "/":
+                    resultado = Convert.ToDouble(primeiroValor) / Convert.ToDouble(segundoValor);
+                    break ;
+            }
             txtValor.Text = resultado.ToString();
         }
+
+        private void btnClean_Click(object sender, EventArgs e)
+        {
+            primeiroValor = "";
+            segundoValor = "";
+            txtValor.Text = "";
+        }
+
+
     }
 }
