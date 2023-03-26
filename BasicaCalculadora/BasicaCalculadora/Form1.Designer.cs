@@ -45,6 +45,7 @@
             this.btn8 = new System.Windows.Forms.Button();
             this.btn9 = new System.Windows.Forms.Button();
             this.btnRaiz = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtValor
@@ -216,11 +217,22 @@
             this.btnRaiz.UseVisualStyleBackColor = true;
             this.btnRaiz.Click += new System.EventHandler(this.btnRaiz_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(78, 122);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(60, 60);
+            this.btnBack.TabIndex = 28;
+            this.btnBack.Text = "CE";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(281, 449);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnRaiz);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn8);
@@ -264,6 +276,7 @@
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Button btnRaiz;
+        private System.Windows.Forms.Button btnBack;
     }
 }
 

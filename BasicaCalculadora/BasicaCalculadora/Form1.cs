@@ -18,6 +18,11 @@ namespace BasicaCalculadora
             InitializeComponent();
         }
 
+        private void adicionarNumero(string numero)
+        {
+            txtValor.Text += numero;
+        }
+
         double resultado = 0;
         string operacao;
         string primeiroValor;
@@ -75,10 +80,7 @@ namespace BasicaCalculadora
             segundoValor = "";
             txtValor.Text = "";
         }
-        private void adicionarNumero(string numero)
-        {
-            txtValor.Text += numero;
-        }
+
 
         private void btn1_Click(object sender, EventArgs e)
         {
@@ -92,37 +94,37 @@ namespace BasicaCalculadora
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            txtValor.Text += btn3.Text;
+            adicionarNumero(btn3.Text);
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            txtValor.Text += btn4.Text;
+            adicionarNumero(btn4.Text);
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            txtValor.Text += btn5.Text;
+            adicionarNumero(btn5.Text);
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            txtValor.Text += btn6.Text;
+            adicionarNumero(btn6.Text);
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            txtValor.Text += btn7.Text;
+            adicionarNumero(btn7.Text);
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            txtValor.Text += btn8.Text;
+            adicionarNumero(btn8.Text);
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            txtValor.Text += btn9.Text;
+            adicionarNumero(btn9.Text);
         }
 
         private void btnRaiz_Click(object sender, EventArgs e)
@@ -131,6 +133,11 @@ namespace BasicaCalculadora
             txtValor.Text = "";
             resultado = Math.Sqrt(Convert.ToDouble(primeiroValor));
             txtValor.Text = resultado.ToString();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            txtValor.Text -= " ";
         }
     }
 }
