@@ -23,12 +23,6 @@ namespace BasicaCalculadora
         string primeiroValor;
         string segundoValor;
 
-        private void btnNumero_Click(object sender, EventArgs e)
-        {
-            Button btn = (Button)sender;
-        }
-
-
         private void btnSomar_Click(object sender, EventArgs e)
         {
             primeiroValor = txtValor.Text;
@@ -82,6 +76,57 @@ namespace BasicaCalculadora
             txtValor.Text = "";
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtValor.Text += btn1.Text;
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txtValor.Text += btn2.Text;
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            txtValor.Text += btn3.Text;
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            txtValor.Text += btn4.Text;
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            txtValor.Text += btn5.Text;
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            txtValor.Text += btn6.Text;
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            txtValor.Text += btn7.Text;
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            txtValor.Text += btn8.Text;
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            txtValor.Text += btn9.Text;
+        }
+
+        private void btnRaiz_Click(object sender, EventArgs e)
+        {
+            primeiroValor = txtValor.Text;
+            txtValor.Text = "";
+            resultado = Math.Sqrt(Convert.ToDouble(primeiroValor));
+            txtValor.Text = resultado.ToString();
+        }
     }
 }
