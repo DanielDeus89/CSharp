@@ -75,15 +75,19 @@ namespace BasicaCalculadora
             segundoValor = "";
             txtValor.Text = "";
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void adicionarNumero(string numero)
         {
-            txtValor.Text += btn1.Text;
+            txtValor.Text += numero;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn1_Click(object sender, EventArgs e)
         {
-            txtValor.Text += btn2.Text;
+            adicionarNumero(btn1.Text);
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            adicionarNumero(btn2.Text);
         }
 
         private void btn3_Click(object sender, EventArgs e)
