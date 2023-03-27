@@ -20,7 +20,18 @@ namespace BasicaCalculadora
 
         private void adicionarNumero(string numero)
         {
-            txtValor.Text += numero;
+            string currentNumber = txtValor.Text;
+
+            if (currentNumber.Length > 0 && currentNumber[0] == '0')
+            {
+                txtValor.Text = "";
+                txtValor.Text += numero;
+            }
+            else
+            {
+                txtValor.Text += numero;
+
+            }
         }
 
         double resultado = 0;
@@ -31,6 +42,7 @@ namespace BasicaCalculadora
         private void btnSomar_Click(object sender, EventArgs e)
         {
             primeiroValor = txtValor.Text;
+            lblPrimeiro.Text = primeiroValor;
             txtValor.Text = "";
             operacao = "+";
         }
@@ -60,6 +72,7 @@ namespace BasicaCalculadora
             {
                 case "+":
                     resultado = Convert.ToDouble(primeiroValor) + Convert.ToDouble(segundoValor);
+                    lblPrimeiro.Text = primeiroValor + " + " + segundoValor + " = ";
                     break;
                 case "-":
                     resultado = Convert.ToDouble(primeiroValor) - Convert.ToDouble(segundoValor);
@@ -84,7 +97,9 @@ namespace BasicaCalculadora
 
         private void btn1_Click(object sender, EventArgs e)
         {
+
             adicionarNumero(btn1.Text);
+
         }
 
         private void btn2_Click(object sender, EventArgs e)
@@ -135,9 +150,31 @@ namespace BasicaCalculadora
             txtValor.Text = resultado.ToString();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void btnBackSpace_Click(object sender, EventArgs e)
         {
-            txtValor.Text -= " ";
+            string currentNumber = txtValor.Text;
+            if(currentNumber.Length > 0)
+            {
+                currentNumber = currentNumber.Substring(0, currentNumber.Length - 1);
+                txtValor.Text = currentNumber;
+            }
+        }
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            string currentNumber = txtValor.Text;
+            if(currentNumber.Length == 0)
+            {
+                txtValor.Text = "0";
+            }
+            else if (currentNumber.Length == 1 && currentNumber[0] == '0')
+            {
+            }
+            else
+            {
+                txtValor.Text += "0";
+
+            }
         }
     }
 }
